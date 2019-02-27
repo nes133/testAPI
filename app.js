@@ -1,4 +1,4 @@
-function getPictures() {
+
     fetch('https://jsonplaceholder.typicode.com/photos')
     .then((res) => res.json())
     .then((data) => {
@@ -14,6 +14,3 @@ function getPictures() {
     })
     document.getElementById('output').innerHTML = output;
     }) 
-}
-
-getPictures();
